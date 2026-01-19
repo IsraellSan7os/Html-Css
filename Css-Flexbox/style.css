@@ -1,0 +1,64 @@
+* {
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+
+}
+
+
+.app {
+    display: grid;
+    height: 98vh;
+    grid-template-areas:
+        "header header header"
+        "main main aside"
+        "footer footer aside"
+    ;
+    border: solid 1px black;
+
+    header {
+        border: solid 1px black;
+        grid-area: header;
+        background-color: red;
+
+        div {
+            display: grid;
+            grid-auto-flow: column;
+            justify-content: space-between;
+
+
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+
+    }
+
+    main {
+        border: solid 1px black;
+        grid-area: main;
+        background-color: rgb(0, 0, 0);
+
+        .form{
+            width:627px;
+            input{
+                width: 451px;   
+            }
+        }
+    }
+
+    aside {
+        border: solid 1px black;
+        grid-area: aside;
+        background-color: rgb(255, 140, 0);
+    }
+
+    footer {
+        border: solid 1px black;
+        grid-area: footer;
+        background-color: blueviolet;
+    }
+
+}
