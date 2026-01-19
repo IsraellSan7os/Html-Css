@@ -1,0 +1,49 @@
+:root {
+    --bg-color: red;
+}
+
+body {
+    /* background-color: var(--bg-color); */
+}
+
+
+/* Ate 300px ele mantem o que esta definido  */
+@media screen and (max-width: 375px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        background-color: aqua;
+
+        div {
+            margin-bottom: 50px;
+            color: #d60101;
+            font-size: 40px;
+        }
+    }
+
+}
+
+/* Apartir de 760px ela muda */
+@media screen and (min-width: 560px) {
+    body {
+        background-color: yellow;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+
+        div {
+            margin-bottom: 20px;
+
+            width: 200px;
+            height: 300px;
+            background-color: #ffff;
+
+            text-align: center;
+            align-content: center;
+
+
+        }
+
+    }
+}
