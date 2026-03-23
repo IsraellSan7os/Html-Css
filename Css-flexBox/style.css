@@ -1,0 +1,17 @@
+.container {
+  border: dashed;
+
+  display: flex;
+  flex-direction: column;
+  /* flex-direction: row; */
+  /* flex-direction: row-reverse; */
+}
+
+/* Main cross */
+
+.item {
+  --hue: 0;
+
+  text-align: center;
+  background-color: hsl(var(--hue), 100%, 70%);
+}

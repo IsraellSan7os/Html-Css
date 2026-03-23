@@ -3,28 +3,44 @@
 }
 
 body {
-    /* background-color: var(--bg-color); */
+    background-color: var(--bg-color);
 }
 
 
 /* Ate 300px ele mantem o que esta definido  */
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 375px) {
     body {
         display: flex;
         flex-direction: column;
         background-color: aqua;
+        padding: 20px;
+
 
         div {
             margin-bottom: 50px;
-            color: #d60101;
-            font-size: 40px;
+            color: #000000;
+            font-size: 16px;
         }
     }
 
 }
 
+
+
 /* Apartir de 760px ela muda */
-@media screen and (min-width: 560px) {
+
+
+@media (min-width: 380px) and (max-width: 1024px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        background-color: rgb(252, 242, 242);
+    }
+}
+
+
+@media screen and (min-width: 1025px) {
     body {
         background-color: yellow;
         display: flex;
