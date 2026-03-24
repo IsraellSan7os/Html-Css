@@ -15,3 +15,22 @@
   text-align: center;
   background-color: hsl(var(--hue), 100%, 70%);
 }
+
+/*  justify-content
+
+   flex-start -> Inicio 
+   center     -> Meio   
+   flex-end   -> Fim
+   space-evenly -> Espaço ao redor
+   space-around -> Espaço igual para todos
+  space-between -> Espaço entre eles
+
+*/
+
+
+.container {
+  display: flex;
+  height: 90vh;
+  flex-direction: column;
+  justify-content:space-around;
+}
