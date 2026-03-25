@@ -25,7 +25,7 @@
    space-around -> Espaço igual para todos
   space-between -> Espaço entre eles
 
-*/
+
 
 
 .container {
@@ -33,4 +33,26 @@
   height: 90vh;
   flex-direction: column;
   justify-content:space-around;
+}
+
+*/
+/* Aline itens 
+  center
+  flex-stat
+  flex-end
+
+  Depende de como ta o flex-direction 
+  pois ele muda o eixo
+
+*/
+
+.container {
+  height: 50vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 20px;
 }
