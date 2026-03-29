@@ -47,12 +47,36 @@
 */
 
 .container {
+  height: 20vh;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  gap: 20px;
+}
+
+.container-multi-line {
+  margin-top: 20px;
+  border: dashed;
   height: 50vh;
 
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
-
+  /* align-items: center; */
+  align-content: center;
   gap: 20px;
+  flex-wrap: wrap;
+
+  .item {
+    width: 100px;
+    height: 100px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
 }
